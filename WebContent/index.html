@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="Css/sidenav.min.css" type="text/css" />
+
+    <title>OVEG</title>
+    <style type="text/css">
+      body {
+        background: #eee;
+        font-family: "Roboto", sans-serif;
+      }
+      .toggle {
+        color: #666;
+        display: block;
+        height: 72px;
+        line-height: 72px;
+        text-align: center;
+        width: 72px;
+      }
+      h1 {
+        margin: 30px auto;
+        text-align: center;
+      }
+    </style>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+      <div class="sidenav-brand">VGEO</div>
+      <!-- 
+      <div class="sidenav-header">
+        Get it from here..
+        <small>If you want</small>
+      </div> -->
+
+      <!-- NavBar Start -->
+      <ul class="sidenav-menu">
+        <!-- Category start -->
+        <li>
+          <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+            <span class="sidenav-link-icon">
+              <span class="material-symbols-outlined"> category </span>
+            </span>
+            <span class="sidenav-link-title">Category</span>
+
+            <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+              <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+            </span>
+            <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
+          </a>
+
+          <ul class="sidenav-dropdown" data-sidenav-dropdown>
+            <!-- New Category start -->
+            <li>
+              <a href="CategoryAdd.html">
+                <span class="sidenav-link-icon">
+                  <span class="material-symbols-outlined"> post_add </span>
+                </span>
+                <span>New Category</span>
+              </a>
+            </li>
+            <!-- New Category end -->
+            <!-- Category VED start -->
+            <li>
+              <a href="CategoryVED.jsp">
+                <span class="sidenav-link-icon">
+                  <span class="material-symbols-outlined"> shopping_cart </span>
+                </span>
+                <span>Category VED</span>
+              </a>
+            </li>
+            <!-- Category VED end -->
+          </ul>
+        </li>
+        <!-- Category End -->
+        <!-- Item start -->
+        <li>
+          <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+            <span class="sidenav-link-icon">
+              <span class="material-symbols-outlined"> list_alt </span>
+            </span>
+            <span class="sidenav-link-title">Item</span>
+
+            <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+              <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+            </span>
+            <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
+          </a>
+
+          <ul class="sidenav-dropdown" data-sidenav-dropdown>
+            <!-- New Category start -->
+            <li>
+              <a
+                href="ItemAdd.html"
+                data-sidenav-dropdown-toggle
+                class="active"
+              >
+                <span class="sidenav-link-icon">
+                  <span class="material-symbols-outlined">
+                    create_new_folder
+                  </span>
+                </span>
+                <span>New Item</span>
+              </a>
+            </li>
+            <!-- New Category end -->
+            <!-- Category VED start -->
+            <li>
+              <a href="ItemVED.jsp" data-sidenav-dropdown-toggle class="active">
+                <span class="sidenav-link-icon">
+                  <span class="material-symbols-outlined"> summarize </span>
+                </span>
+                <span>Item VED</span>
+              </a>
+            </li>
+            <!-- Category VED end -->
+          </ul>
+        </li>
+      </ul>
+
+      <!-- <div class="sidenav-header">Another Section Header</div> -->
+
+      <!-- <ul class="sidenav-menu">
+        <li>
+          <a href="javascript:;" data-sidenav-dropdown-toggle>
+            <span class="sidenav-link-icon">
+              <i class="material-icons">date_range</i>
+            </span>
+            <span class="sidenav-link-title">Reprehenderit</span>
+            <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+              <i class="material-icons">arrow_drop_down</i>
+            </span>
+            <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+              <i class="material-icons">arrow_drop_up</i>
+            </span>
+          </a>
+
+          <ul class="sidenav-dropdown" data-sidenav-dropdown>
+            <li><a href="javascript:;">Voluptate</a></li>
+            <li><a href="javascript:;">Excepteur</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="sidenav-link-icon">
+              <i class="material-icons">backup</i>
+            </span>
+            <span class="sidenav-link-title">Occaecat</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="sidenav-link-icon">
+              <i class="material-icons">settings</i>
+            </span>
+            <span class="sidenav-link-title">Deserunt</span>
+          </a>
+        </li>
+      </ul> -->
+    </nav>
+
+    <a href="javascript:;" class="toggle" id="sidenav-toggle">
+      <span class="material-symbols-outlined"> menu </span>
+    </a>
+
+    <h1>VGEO</h1>
+    <div class="jquery-script-ads" align="center">
+      <script type="text/javascript">
+        google_ad_client = "ca-pub-2783044520727903";
+        /* jQuery_demo */
+        google_ad_slot = "2780937993";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+      </script>
+      <script
+        type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js"
+      ></script>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Js/sidenav.min.js"></script>
+    <script>
+      $("[data-sidenav]").sidenav();
+    </script>
+  </body>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-36251023-1"]);
+    _gaq.push(["_setDomainName", "jqueryscript.net"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function () {
+      var ga = document.createElement("script");
+      ga.type = "text/javascript";
+      ga.async = true;
+      ga.src =
+        ("https:" == document.location.protocol
+          ? "https://ssl"
+          : "http://www") + ".google-analytics.com/ga.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</html>
